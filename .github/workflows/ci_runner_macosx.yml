@@ -15,7 +15,7 @@ jobs:
     runs-on: macos-latest
     steps:
     - uses: actions/checkout@v3
-    - uses: actions/setup-python@v4
+    - uses: actions/setup-python@v4.3.0
       with:
         python-version: '3.9.x'
     - run: pip install meson ninja scan-build
@@ -35,7 +35,7 @@ jobs:
     runs-on: macos-10.15
     steps:
     - uses: actions/checkout@v3
-    - uses: actions/setup-python@v3
+    - uses: actions/setup-python@v4.3.0
       with:
         python-version: '3.9.x'
     - run: pip install meson ninja scan-build
@@ -55,7 +55,7 @@ jobs:
     runs-on: macos-11
     steps:
     - uses: actions/checkout@v3
-    - uses: actions/setup-python@v3
+    - uses: actions/setup-python@v4.3.0
       with:
         python-version: '3.9.x'
     - run: pip install meson ninja scan-build
@@ -75,7 +75,7 @@ jobs:
     runs-on: macos-12
     steps:
     - uses: actions/checkout@v3
-    - uses: actions/setup-python@v3
+    - uses: actions/setup-python@v4.3.0
       with:
         python-version: '3.9.x'
     - run: pip install meson ninja scan-build
