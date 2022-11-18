@@ -41,7 +41,7 @@ jobs:
   host_chromeos:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v3
+    - uses: actions/checkout@v3.1.0
     - uses: nanasess/setup-chromedriver@v1.0.8
     - run: chromedriver --url-base=/wd/hub &
     - name: Install Meson build
@@ -62,7 +62,7 @@ jobs:
     container:
       image: "ghcr.io/troglodyte-coder/ciimage_host_ubuntu:main"
     steps:
-    - uses: actions/checkout@v3
+    - uses: actions/checkout@v3.1.0
     - name: Running CI-Image
       run: |
         scan-build meson setup builddir -Dwith_tests=enabled &&
@@ -79,7 +79,7 @@ jobs:
     container:
       image: "ghcr.io/troglodyte-coder/ciimage_host_debian:main"
     steps:
-    - uses: actions/checkout@v3
+    - uses: actions/checkout@v3.1.0
     - name: Running CI-Image
       run: |
         scan-build meson setup builddir -Dwith_tests=enabled &&
@@ -96,7 +96,7 @@ jobs:
     container:
       image: "ghcr.io/troglodyte-coder/ciimage_host_fedora:main"
     steps:
-    - uses: actions/checkout@v3
+    - uses: actions/checkout@v3.1.0
     - name: Running CI-Image
       run: |
         scan-build meson setup builddir -Dwith_tests=enabled &&
@@ -113,7 +113,7 @@ jobs:
     container:
       image: "ghcr.io/troglodyte-coder/ciimage_host_archlinux:main"
     steps:
-    - uses: actions/checkout@v3
+    - uses: actions/checkout@v3.1.0
     - name: Running CI-Image
       run: |
         scan-build meson setup builddir -Dwith_tests=enabled &&
@@ -129,7 +129,7 @@ jobs:
     container:
       image: "ghcr.io/troglodyte-coder/ciimage_host_opensuse:main"
     steps:
-    - uses: actions/checkout@v3
+    - uses: actions/checkout@v3.1.0
     - name: Running CI-Image
       run: |
         scan-build meson setup builddir -Dwith_tests=enabled &&
