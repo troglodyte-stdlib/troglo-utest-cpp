@@ -14,7 +14,7 @@ jobs:
   host_macosx_latest:
     runs-on: macos-latest
     steps:
-    - uses: actions/checkout@v3.1.0
+    - uses: actions/checkout@v3.2.0
     - uses: actions/setup-python@v4
       with:
         python-version: '3.9.x'
@@ -34,7 +34,7 @@ jobs:
   host_macosx_10:
     runs-on: macos-10.15
     steps:
-    - uses: actions/checkout@v3.1.0
+    - uses: actions/checkout@v3.2.0
     - uses: actions/setup-python@v3
       with:
         python-version: '3.9.x'
@@ -54,7 +54,7 @@ jobs:
   host_macosx_11:
     runs-on: macos-11
     steps:
-    - uses: actions/checkout@v3.1.0
+    - uses: actions/checkout@v3.2.0
     - uses: actions/setup-python@v3
       with:
         python-version: '3.9.x'
@@ -74,7 +74,7 @@ jobs:
   host_macosx_12:
     runs-on: macos-12
     steps:
-    - uses: actions/checkout@v3.1.0
+    - uses: actions/checkout@v3.2.0
     - uses: actions/setup-python@v3
       with:
         python-version: '3.9.x'
